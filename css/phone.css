@@ -1,0 +1,29 @@
+#services {
+    flex-direction: column;
+}
+#logo img {
+    height: 50px;
+    margin: 0px;
+}
+#n1 ul li a {
+    font-size: 1.2rem;
+    color: white;
+    display: block;
+    padding: 5px;
+    margin: 6px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: 'Nerko One', cursive;
+}
+.hp1 {
+    font-family: 'Nerko One', cursive;
+    font-size: 2.5rem;
+    padding: 10px;
+    text-align: center;
+}
+#home p {
+    color: white;
+    font-family: 'Nerko One', cursive;
+    margin: 5px;
+    font-size: 1.1rem;
+}
