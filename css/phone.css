@@ -1,5 +1,25 @@
-#services {
+#about{
     flex-direction: column;
+}
+#services .box{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+#services .box img{
+    width: 200px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 5px 30px;
+    display: block;
+}
+#content{
+    margin: 0px 20px;
+    margin-bottom: 20px;
+    width: 70%;
+}
+#content .hp{
+    font-size: 2.5rem;
 }
 #logo img {
     height: 50px;
@@ -20,6 +40,12 @@
     font-size: 2.5rem;
     padding: 10px;
     text-align: center;
+}
+.hp3{
+    font-size: 2.5rem;
+}
+#content .hp{
+    font-size: 1.5rem;
 }
 #home p {
     color: white;

@@ -25,11 +25,12 @@
 }
 #logo{
     display: flex;
-    justify-items: flex-start;
     margin: 10px 10px;
    
 }
 #logo img{
+    position: relative;
+    
     height: 60px;
     margin: 3px 3px;
 }
@@ -61,8 +62,16 @@
     
     color: black;
     background-color: white;
-}
 
+}
+#rightnav{
+    position: absolute;
+    right: 0px;
+}
+#search{
+    background: none;
+    border-bottom: 3px solid white;
+}
 
 #home{
     display: flex;
@@ -126,54 +135,68 @@
 
 .hp1{
     font-family: 'Nerko One', cursive;
-    font-size: 3.5rem;
-    padding: 10px;
+    font-size: 4.5rem;
     text-align: center;
     
 }
 
 .hp2{
-    font-family: 'Nerko One', cursive;
+    font-family: 'Shadows Into Light', cursive;
     font-size: 2rem;
     padding: 10px;
     color: white;
     
 }
-#services{
+.hp3{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 4rem;
+    padding: 10px;
+    color: black;
+    
+}
+hr{
+    margin: 5px 10px ;
+    align: center;
+}
+#about{
     display: flex;
-    justify-content: center;
-    
-    
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+#about::before {
+    content: "";
+    position: absolute;
+    height: 232%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background: url(../services.jpg) center center / cover no-repeat;
 }
 #services .box{
-    border: 3px solid black;
-    padding: 10px;
-    margin: 20px;
-    border-radius: 20px;
-    background-color: rgb(33 33 33);
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
 }
-
 #services .box img{
-    height: 100px;
+    width: 400px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 5px 30px;
     display: block;
-    margin: auto;
 }
-#services .box p{
-    font-size: 1.3rem ;
-    color: white;
-  
+#content{
+    margin: 0px 20px;
+    margin-bottom: 20px;
+    width: 70%;
 }
-.services{
-    font-family: 'Nerko One', cursive;
-    font-size: 3.5rem;
-    padding: 2.5px;
-    text-align: center;
-    margin: 10px;
+#content .hp{
+    padding: 10px;
+    font-size: 2rem;
     color: black;
-    border-radius: 20px;
-
+    font-weight: 400;
+    font-family: 'Dosis', sans-serif;
 }
+
 #menu{
     display: flex;
     justify-content: center;
@@ -202,11 +225,12 @@
 }
 #m1{
     position: relative;
+    display: none;
 }
-#m1::before{
+#menu::before{
     content: '';
     position: absolute;
-   
+    top: 0px;
     background: url(../bgmenu2.jpg) no-repeat center center/cover;
     height: 100%;
     width: 100%;
@@ -244,7 +268,7 @@
     padding: 2.5px;
     text-align: center;  
     margin: 10px;
-    color: white;
+    color: black;
     border-radius: 20px;
 }
 .contact .contactbox{
@@ -281,21 +305,53 @@
     font-family: 'Nerko One', cursive;
     font-size: 1.4rem;
 }
-#serve{
-    position: relative;
-}
-#serve::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.9;
-    background: url(../services.jpg) no-repeat center center/cover;
 
-}
 .copy{
     text-align: center;
     background-color: black;
     color: white;
 }
+.footer{
+    background-color: rgb(52, 52, 52);
+}
+.footer .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.footer .column{
+    display: flex;
+    width: 25%;
+    margin: 25px;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Dosis', sans-serif;
+
+}
+
+.footer .social ul{
+    display: flex;
+    flex-direction: row;
+}
+.footer .social a{
+    font-size: 20px;
+    color: inherit;
+    border: 1px solid white;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    margin: 5px;
+    opacity: 0.7;
+}
+.footer .social a:hover{
+    opacity: 1;
+    background-color: rgb(60, 59, 59);
+ }  
+ .hx{
+    font-family: 'Nerko One', cursive;
+ }

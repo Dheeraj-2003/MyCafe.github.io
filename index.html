@@ -7,13 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Cafe</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="screen and (max-width: 630px)" href="css/phone.css">
+    <link rel="stylesheet" media="screen and (max-width: 1192px)" href="css/phone.css">
+    <link rel="stylesheet" media="screen and (min-width:850px and max-width: 1192px)" href="css/style1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Rubik+Distressed&display=swap"
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9d7b3d6d16.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@800&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -24,8 +29,8 @@
         </div>
         <ul>
             <li class="item"><a href="#home">Home</a></li>
-            <li class="item"><a href="#serve">Services</a></li>
-            <li class="item"><a href="#m1">Menu</a></li>
+            <li class="item"><a href="#about">About Us</a></li>
+            <li class="item"><a href="menu.html">Menu</a></li>
             <li class="item"><a href="#getdelivered">Get Delivered!</a></li>
         </ul>
 
@@ -37,36 +42,49 @@
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim porro suscipit</p>
         <button class="b1"> <a href="#getdelivered">Order now>></a></li> </button>
     </section>
-    <section id="serve">
-        <h1 class="services">
-            Our Services
+    <hr color="white" size="0.5px">
+    <section id="about">
+        <h1 class="hp1">
+            About Us
         </h1>
+        <hr width="85%" size="2rem" color="black">
         <div id="services">
             <div class="box">
                 <img src="cappucino.jpg" alt="cappucino">
-                <h2 class="hp2">Food ordering online</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ducimus modi amet. Iure dignissimos
-                    perferendis a fugit nisi molestiae incidunt, harum illo libero delectus quo tenetur aliquam
-                    consequatur vitae ab.</p>
+                <div id="content">
+                    <h2 class="hp3">Food ordering online</h2>
+                    <p class="hp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus obcaecati ad,
+                        iste porro aperiam consequuntur deleniti labore natus voluptate reiciendis, magni atque sint
+                        vel, dicta quibusdam. Enim nam consequuntur quas.</p>
+                </div>
+
             </div>
+            <hr width="85%" size="2rem" color="black">
             <div class="box">
-                <img src="delivery1.png" alt="delivery">
-                <h2 class="hp2">Get Delivered in 30mins</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ducimus modi amet. Iure dignissimos
-                    perferendis a fugit nisi molestiae incidunt, harum illo libero delectus quo tenetur aliquam
-                    consequatur vitae ab.</p>
+                <div id="content">
+                    <h2 class="hp3">Get Delivered in 30mins</h2>
+                    <p class="hp">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, doloremque at
+                        facilis molestiae corrupti animi quisquam autem nemo nam tempore sint incidunt debitis sapiente
+                        recusandae? Corporis accusamus asperiores explicabo soluta.</p>
+                </div>
+                <img src="deliveryman.png" alt="delivery">
+
             </div>
+            <hr width="85%" size="2rem" color="black">
             <div class="box">
                 <img src="food.jpg" alt="food">
-                <h2 class="hp2">Quality food
-                </h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ducimus modi amet. Iure dignissimos
-                    perferendis a fugit nisi molestiae incidunt, harum illo libero delectus quo tenetur aliquam
-                    consequatur vitae ab.</p>
+                <div id="content">
+                    <h2 class="hp3">Quality food
+                    </h2>
+                    <p class="hp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores et vel commodi
+                        praesentium dicta doloremque magnam assumenda modi suscipit? Minima eius consectetur enim optio,
+                        nesciunt dignissimos odit natus sed quam!</p>
+
+                </div>
             </div>
         </div>
     </section>
-   
+    <hr color="white" size="0.5px">
     <section id="m1">
         <h1 class="headmenu">
             Menu
@@ -76,40 +94,71 @@
                 <img src="cappucino.jpg" alt="cappucino">
                 <h2 class="hp2">Beverages</h2>
                 <ul>
-                    <li class="item"><p href="#">Tea.....Rs.50</p></li>
-                    <li class="item"><p href="#">Masala Tea.....Rs.70</p></li>
-                    <li class="item"><p href="#">Vanila Cold Coffee.....Rs95</p></li>
-                    <li class="item"><p href="#">Chocolate Cold Coffee.....Rs100</p></li>
-                    <li class="item"><p href="#">Lorem.....Rs.xx</p></li>
+                    <li class="item">
+                        <p href="#">Tea.....Rs.50</p>
+                    </li>
+                    <li class="item">
+                        <p href="#">Masala Tea.....Rs.70</p>
+                    </li>
+                    <li class="item">
+                        <p href="#">Vanila Cold Coffee.....Rs95</p>
+                    </li>
+                    <li class="item">
+                        <p href="#">Chocolate Cold Coffee.....Rs100</p>
+                    </li>
+                    <li class="item">
+                        <p href="#">Lorem.....Rs.xx</p>
+                    </li>
                 </ul>
             </div>
             <div class="box">
                 <img src="food.jpg" alt="food">
                 <h2 class="hp2">Snacks</h2>
                 <ul>
-                    <li class="item"><p href="#">Tea.....Rs.50</p></li>
-                    <li class="item"><p href="#">Masala Tea.....Rs.70</p></li>
-                    <li class="item"><p href="#">Vanila Cold Coffee.....Rs95</p></li>
-                    <li class="item"><p href="#">Chocolate Cold Coffee.....Rs100</p></li>
-                    <li class="item"><p href="#">Lorem.....Rs.xx</p></li>
+                    <li class="item">
+                        <p href="#">Tea.....Rs.50</p>
+                    </li>
+                    <li class="item">
+                        <p href="#">Masala Tea.....Rs.70</p>
+                    </li>
+                    <li class="item">
+                        <p href="#">Vanila Cold Coffee.....Rs95</p>
+                    </li>
+                    <li class="item">
+                        <p href="#">Chocolate Cold Coffee.....Rs100</p>
+                    </li>
+                    <li class="item">
+                        <p href="#">Lorem.....Rs.xx</p>
+                    </li>
                 </ul>
             </div>
             <div class="box">
                 <img src="dessert.jpg" alt="cappucino">
                 <h2 class="hp2">Dessert</h2>
                 <ul>
-                    <li class="item"><p href="#">Tea.....Rs.50</p></li>
-                    <li class="item"><p href="#">Masala Tea.....Rs.70</p></li>
-                    <li class="item"><p href="#">Vanila Cold Coffee.....Rs95</p></li>
-                    <li class="item"><p href="#">Chocolate Cold Coffee.....Rs100</p></li>
-                    <li class="item"><p href="#">Lorem.....Rs.xx</p></li>
+                    <li class="item">
+                        <p href="#">Tea.....Rs.50</p>
+                    </li>
+                    <li class="item">
+                        <p href="#">Masala Tea.....Rs.70</p>
+                    </li>
+                    <li class="item">
+                        <p href="#">Vanila Cold Coffee.....Rs95</p>
+                    </li>
+                    <li class="item">
+                        <p href="#">Chocolate Cold Coffee.....Rs100</p>
+                    </li>
+                    <li class="item">
+                        <p href="#">Lorem.....Rs.xx</p>
+                    </li>
                 </ul>
             </div>
         </div>
-        </section>
-        <section id="getdelivered">
+    </section>
+    <hr color="white" size="0.5px">
+    <section id="getdelivered">
         <section class="contact">
-            <h1 class="services">
+            <h1 class="hp1">
                 Get Delivered!
             </h1>
             <div class="contactbox">
@@ -145,12 +194,34 @@
                 </form>
             </div>
         </section>
-        </section>
-       <footer>
-        <div class="copy">
-            Copyright &copy; Dheeraj Solanki. All rights reserved.
+    </section>
+    <section class="footer">
+        <div class="row">
+            <div class="column">
+                <h2 class="hx">Hours</h2>
+                <h5>Monday-Sunday</h5>
+                <h5>8AM-11PM</h5>
+            </div>
+            <div class="column">
+                <h2 class="hx">Contact</h2>
+                <ul>
+                    <li>Address: Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, soluta!</li>
+                    <li>Email: xyz@gmail.com</li>
+                    <li>Phone: 999999999</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h2 class="hx">Other Contacts</h2>
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
         </div>
-       </footer>
+
+
+        </div>
+    </section>
 
 </body>
 
