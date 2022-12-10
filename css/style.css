@@ -302,7 +302,7 @@ hr{
 }
 #s1{
     width: 100%;
-    height: 105vh;
+    height: 100vh;
     background: rgb(255, 249, 249);
     display: flex;
     align-items: center;
@@ -417,4 +417,101 @@ hr{
  }  
  html{
     scroll-behavior: smooth;
+ }
+ #how .cont .box img{
+    height: 42vh;
+    width: 42vh;
+    border: 1px solid black;
+    border-radius: 50%;
+ }
+ #how .hp3{
+    margin-top: 0px;
+    padding-top: 0px;
+    text-align: center;
+ }
+ #how .cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+ }
+ #how .cont .box{
+    margin: 15px;
+ }
+ #how .cont .box .hp{
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-align: center;
+ }
+ #story{
+    width: 100%;
+    height: 100vh;
+}
+#story::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url(../story1.jpg) center center / cover no-repeat;
+}
+#story .us1{
+    position: absolute;
+    right: 0px;
+    width: 45%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 17px;
+    margin: 50px 30px;
+    opacity: 0.8;
+    align-self: flex-end;
+}
+#aboutus .cont .box .abt img{
+    align-self: center;
+    height: 42vh;
+    width: 42vh;
+    border: 1px solid black;
+    border-radius: 50%;
+ }
+ #aboutus .hp3{
+    margin-top: 0px;
+    padding: 0px;
+    text-align: center;
+ }
+ #aboutus .cont{
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+    margin-bottom: 20px;
+ }
+ #aboutus .cont .box{
+    margin: 15px;
+    width: auto;
+    
+ }
+ #aboutus .cont .box .abt .hp{
+    font-weight: 200;
+    font-size: 2rem;
+    text-align: center;
+ }
+ #aboutus .cont .box .abt .hp3{
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+ }
+ #aboutus .cont .box .abt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+ hr{
+    size: 3rem;
+    color: black;
+ }
+ #aboutus{
+    border: 5px solid black;
+ }
+ #how{
+    border: 5px solid black;
  }

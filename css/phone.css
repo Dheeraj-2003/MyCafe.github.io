@@ -22,14 +22,16 @@
 }
 
 #logo img {
-    height: 50px;
+    height: 40px;
     margin: 0px;
+    padding: 0px;
+    
 }
 #n1 ul li a {
     font-size: 1.2rem;
     display: block;
-    padding: 5px;
-    margin: 6px;
+    padding: 0px 5px;
+    margin: 0px 6px;
     border-radius: 10px;
     text-decoration: none;
     font-family: 'Nerko One', cursive;
@@ -77,8 +79,13 @@
     font-family: 'Shadows Into Light', cursive;
     font-size: 1rem;
 }
+#aboutus .cont{
+       
+    flex-wrap: wrap;
+    
+ } 
 }
-@media (min-width:650px) and (max-width:1110px){
+@media (min-width:650px) and (max-width:1286px){
     #services .box img{
         height: 300px;
         border: 1px solid white;
@@ -91,8 +98,22 @@
         flex-direction: column;
         margin: 50px;
     }
-    #s1{
-        display: none;
-    }
-    
+    #aboutus .cont .box .abt img{
+        
+        height: 19vh;
+        width: 19vh;
+       
+     }
+    /* #aboutus .cont{
+       
+       
+        
+     } 
+     #aboutus .cont .box{
+        
+        height: 25%;
+        
+     }
+    */
 }
+    
