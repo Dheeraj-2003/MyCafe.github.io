@@ -25,14 +25,27 @@
 
     <nav id="n1">
         <div id="logo">
-            <a href="#home"><img src="logo1.png" alt="C4u"></a>
+            <a href="#home"><img src="mycafe.png" alt="C4u"></a>
+            <a class="mycafe" href="#home">My Cafe</a>
         </div>
+        <div id="nav">
         <ul>
+            <li><a href="#" id="close"><i class="fa-solid fa-xmark"></i></a></li>
             <li class="item"><a href="#home">Home</a></li>
-            <li class="item"><a href="menu.html">Menu</a></li>
+            <li class="item"><a href="#s1">Gallery</a></li>
             <li class="item"><a href="#aboutus">About Us</a></li>
             <li class="item"><a href="#getdelivered">Get Delivered!</a></li>
+       
+            <li class="item"><a href="menu.html">Menu</a></li>
+            <li><a href="menu.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+               
         </ul>
+      
+        </div>
+    <div class="mobile">
+        <a href="menu.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <i id="bar" class="fas fa-outdent"></i>
+    </div>  
 
     </nav>
     <section id="home">
@@ -118,76 +131,7 @@
    
    
 
-    <section id="m1">
-        <h1 class="headmenu">
-            Menu
-        </h1>
-        <div id="menu">
-            <div class="box">
-                <img src="cappucino.jpg" alt="cappucino">
-                <h2 class="hp2">Beverages</h2>
-                <ul>
-                    <li class="item">
-                        <p href="#">Tea.....Rs.50</p>
-                    </li>
-                    <li class="item">
-                        <p href="#">Masala Tea.....Rs.70</p>
-                    </li>
-                    <li class="item">
-                        <p href="#">Vanila Cold Coffee.....Rs95</p>
-                    </li>
-                    <li class="item">
-                        <p href="#">Chocolate Cold Coffee.....Rs100</p>
-                    </li>
-                    <li class="item">
-                        <p href="#">Lorem.....Rs.xx</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="box">
-                <img src="food.jpg" alt="food">
-                <h2 class="hp2">Snacks</h2>
-                <ul>
-                    <li class="item">
-                        <p href="#">Tea.....Rs.50</p>
-                    </li>
-                    <li class="item">
-                        <p href="#">Masala Tea.....Rs.70</p>
-                    </li>
-                    <li class="item">
-                        <p href="#">Vanila Cold Coffee.....Rs95</p>
-                    </li>
-                    <li class="item">
-                        <p href="#">Chocolate Cold Coffee.....Rs100</p>
-                    </li>
-                    <li class="item">
-                        <p href="#">Lorem.....Rs.xx</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="box">
-                <img src="dessert.jpg" alt="cappucino">
-                <h2 class="hp2">Dessert</h2>
-                <ul>
-                    <li class="item">
-                        <p href="#">Tea.....Rs.50</p>
-                    </li>
-                    <li class="item">
-                        <p href="#">Masala Tea.....Rs.70</p>
-                    </li>
-                    <li class="item">
-                        <p href="#">Vanila Cold Coffee.....Rs95</p>
-                    </li>
-                    <li class="item">
-                        <p href="#">Chocolate Cold Coffee.....Rs100</p>
-                    </li>
-                    <li class="item">
-                        <p href="#">Lorem.....Rs.xx</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
+    
     <section id="how">
         <h1 class="hp3">How easy it is!!</h1>
         <div class="cont">
@@ -253,6 +197,10 @@
    
     <section class="footer">
         <div class="row">
+            <!-- <div class="foot">
+                <a href="#home"><img src="mycafe.png" alt="C4u"></a>
+                <a class="mycafe" href="#home">My Cafe</a>
+            </div> -->
             <div class="column">
                 <h2 class="hx">Hours</h2>
                 <h5>Monday-Sunday</h5>
@@ -305,6 +253,7 @@
 
         });
     </script>
+   <script src="script.js"></script>
 </body>
 
 </html>

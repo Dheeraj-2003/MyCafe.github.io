@@ -1,12 +1,14 @@
 *{
     margin: 0;
     padding: 0;
+    transition: 0.2s ease;
 }
+
 #n1{
     display: flex;
     position: sticky;
     top: 0px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     z-index: 2;
@@ -23,17 +25,47 @@
     z-index: -1;
     opacity:0.3;
 }
+
 #logo{
     display: flex;
-    margin: 10px 10px;
+    margin: 3px 0px;
+    margin-left: 30px;
     color: black;
+    align-self: flex-end;
+    left: 10px;
+
+   
+}
+#n1 .mycafe{
+    font-size: 1.8rem;
+    color: black;
+    display: block;
+   padding: 5px 10px;
+   margin: 2px 0px;
+   border-radius: 10px;
+   text-decoration: none;
+   font-family: 'Rubik Distressed', cursive;
    
 }
 #logo img{
     position: relative;
-     height: 50px;
+     height: 40px;
+     width: 40px;
     margin: 3px 3px;
+
 }
+.fa-cart-shopping{
+    font-size: 1.7rem;
+    color: black;
+    margin-right: 50px;
+    text-align: center;
+}
+.fa-cart-shopping:hover{
+    font-size: 1.7rem;
+    color: rgb(52, 45, 45);
+    margin-right: 50px;
+}
+
 #n1 ul{
     display: flex;
     align-items: flex-end;
@@ -47,27 +79,41 @@
     
     
 }
-#n1 ul li a{
-    font-size: 1.4rem;
-    color: black;
-    display: block;
-   padding: 5px 25px;
-   margin: 6px;
-   border-radius: 10px;
-   text-decoration: none;
-   font-family: 'Nerko One', cursive;
-   
+.mobile{
+    display: none;
 }
-#n1 ul li a:hover{
+#n1 #close{
+    display: none;
+}
+.rightnav .cart:hover{
+    font-size: 1.7rem;
+    color: black;
+    margin-right: 50px;
+    
+}
+#n1 .item a:hover{
     
     color: black;
     background-color: white;
 
 }
-#rightnav{
-    position: absolute;
-    right: 0px;
+#n1 #men a{
+    margin-right: 0px;
+    padding-right: 0px;
 }
+#n1 ul li a{
+    font-size: 1.7rem;
+    color: black;
+    display: block;
+   padding: 2px 25px;
+   margin: 6px;
+   border-radius: 10px;
+   text-decoration: none;
+   font-family: 'Nerko One', cursive;
+   transition: 0.4s ease;
+   
+}
+
 #search{
     background: none;
     border-bottom: 3px solid white;
@@ -164,7 +210,7 @@
 }
 hr{
     margin: 5px 10px ;
-    align: center;
+
 }
 #us{
     width: 100%;
@@ -226,80 +272,7 @@ hr{
     font-family: 'Dosis', sans-serif;
 }
 
-#menu{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
 
-#menu .box{
-  
-    border: 3px solid black;
-    padding: 15px;
-    margin:  25px 15px;
-    border-radius: 20px;
-    text-align: center;
-    background-color: rgb(36 34 34);
-}
-
-#menu .box img{
-    height: 50px;
-    display: block;
-    margin: auto;
-}
-#menu .box p{
-    font-size: 1.3rem ;
-    color: white;
-  
-}
-#m1{
-    position: relative;
-    display: none;
-}
-#menu::before{
-    content: '';
-    position: absolute;
-    top: 0px;
-    background: url(../bgmenu2.jpg) no-repeat center center/cover;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    opacity:0.96;
-}
-
-#menu .box ul{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    border-radius: 5px;
-}
-#menu ul li{
-    list-style: none ;
-    font-size: 1.2rem;
-    
-    
-}
-#menu ul li p{
-    font-size: 2rem;
-    color: white;
-    display: block;
-   padding: 5px 23px;
-   margin: 10px;
-   border-radius: 10px;
-   text-decoration: none;
-   font-family: 'Nerko One', cursive;
-   
-}
-
-.headmenu{
-    font-family: 'Nerko One', cursive;
-    font-size: 4rem;
-    padding: 2.5px;
-    text-align: center;  
-    margin: 10px;
-    color: black;
-    border-radius: 20px;
-}
 #s1{
     width: 100%;
     height: 100vh;
@@ -414,7 +387,34 @@ hr{
 .footer .social a:hover{
     opacity: 1;
     background-color: rgb(60, 59, 59);
- }  
+ } 
+ .foot{
+    display: flex;
+    flex-direction: column;
+    margin: 3px 0px;
+    margin-left: 30px;
+    color: black;
+    align-self: center;
+    justify-content: center;
+    left: 10px;
+} 
+.foot img{
+     height: 40px;
+     width: 40px;
+    margin: 3px 3px;
+
+}
+.foot .mycafe{
+    font-size: 1.8rem;
+    color: white;
+    display: block;
+   padding: 5px 10px;
+   margin: 2px 0px;
+   border-radius: 10px;
+   text-decoration: none;
+   font-family: 'Rubik Distressed', cursive;
+   
+}
  html{
     scroll-behavior: smooth;
  }
@@ -515,3 +515,17 @@ hr{
  #how{
     border: 5px solid black;
  }
+
+ /* menu */
+ .menu{
+    font-size: 1.8rem;
+    color: black;
+    display: block;
+   padding: 5px 10px;
+   margin: 2px 0px;
+   border-radius: 10px;
+   text-decoration: none;
+   font-family: 'Rubik Distressed', cursive;
+   text-align: center;
+   
+}
