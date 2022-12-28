@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    transition: 0.2s ease;
+
+}
+
+#n1 {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 2;
+    opacity: 1;
+}
+
+#n1::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#logo {
+    display: flex;
+    margin: 3px 0px;
+    margin-left: 30px;
+    color: black;
+    align-self: flex-end;
+    left: 10px;
+
+
+}
+
+#n1 .mycafe {
+    font-size: 1.8rem;
+    color: black;
+    display: block;
+    padding: 5px 10px;
+    margin: 2px 0px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: 'Rubik Distressed', cursive;
+
+}
+
+#logo img {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    margin: 3px 3px;
+
+}
+
+.fa-cart-shopping {
+    font-size: 1.7rem;
+    color: black;
+    margin-right: 50px;
+    text-align: center;
+}
+
+.fa-cart-shopping:hover {
+    font-size: 1.7rem;
+    color: rgb(52, 45, 45);
+    margin-right: 50px;
+}
+
+#n1 ul {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+
+#n1 ul li {
+    list-style: none;
+    font-size: 1.4rem;
+
+
+}
+
+.mobile {
+    display: none;
+}
+
+#n1 #close {
+    display: none;
+}
+
+.rightnav .cart:hover {
+    font-size: 1.7rem;
+    color: black;
+    margin-right: 50px;
+
+}
+
+#n1 .item a:hover {
+
+    color: black;
+    background-color: white;
+
+}
+
+#n1 #men a {
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+#n1 ul li a {
+    font-size: 1.7rem;
+    color: black;
+    display: block;
+    padding: 2px 15px;
+    margin: 6px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: 'Nerko One', cursive;
+    transition: 0.4s ease;
+
+}
+
+#cartbox {
+    position: absolute;
+    width: 200px;
+    height: 350px;
+    top: 9%;
+    right: -110%;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.cart span {
+    font-size: 0.8rem;
+    width: 14px;
+    height: 18px;
+    line-break: auto;
+    line-height: normal;
+    color: white;
+    position: absolute;
+    margin-top: 3px;
+    margin-right: 35px;
+    padding-left: 6px;
+    right: 0px;
+    top: 0px;
+    background: BLACK;
+    border: 1px solid white;
+    border-radius: 50%;
+
+}
+
+.cart {
+    display: flex;
+}
+
+.product img {
+    height: 100px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#cartbox.active {
+    right: 2.5%;
+}
+
+#cover {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cover::before {
+    content: '';
+    position: absolute;
+    top: -120px;
+    left: 0px;
+    background: url(../contact.jpg) no-repeat center center/cover;
+    height: 55vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.headcover {
+    display: block;
+    color: black;
+    font-size: 3rem;
+    font-family: 'Rubik Distressed', cursive;
+    margin: 10px;
+}
+
+.contact .contactbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.contact {
+    position: relative;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.contactbox form {
+    width: 40%;
+}
+
+.contactbox form label {
+    font-family: 'Nerko One', cursive;
+    font-size: 1.4rem;
+}
+
+.copy {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
